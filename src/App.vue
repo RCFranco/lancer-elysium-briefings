@@ -95,7 +95,7 @@ export default {
       "missions": [
         {
           "slug": "001",
-          "name": "Nave Vanguardd",
+          "name": "Operação de Resgate AC-251",
           "status": "in-progress"
         },
         {
