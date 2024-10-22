@@ -24,7 +24,7 @@
     <section class="section-container" id="events" style="width:435px; height:714px;">
       <div class="section-header clipped-medium-backward">
         <img src="/icons/events-icon.svg" />
-        <h1>Status Atual</h1>
+        <h1>Andamento da Missão</h1>
       </div>
       <div class="section-content-container">
         <Markdown :source="events" class="markdown" />
@@ -101,6 +101,11 @@ export default {
         {
           "slug": "002",
           "name": "Vigilant Gaze",
+          "status": "start"
+        },
+        {
+          "slug": "003",
+          "name": "Test",
           "status": "start"
         }
       ],
@@ -210,7 +215,7 @@ export default {
   width: 100vw; /* Full width of the viewport */
   height: 100vh; /* Full height of the viewport */
   overflow: hidden;
-  background-image: url('/public/terminal.jpg');
+  background-image: url('/terminal.jpg');
   background-size: cover; 
   background-repeat: no-repeat;
   background-position: center center; 
