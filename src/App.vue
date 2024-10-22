@@ -215,7 +215,7 @@ export default {
   width: 100vw; /* Full width of the viewport */
   height: 100vh; /* Full height of the viewport */
   overflow: hidden;
-  background-image: url('/terminal.jpg');
+  background-image: url('/public/terminal.jpg');
   background-size: cover; 
   background-repeat: no-repeat;
   background-position: center center; 
