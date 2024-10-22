@@ -4,12 +4,12 @@
     <section class="section-container" id="missions" style="width:435px; height:714px;">
       <div class="section-header clipped-medium-backward">
         <img src="/icons/mission-icon.svg" />
-        <h1>Mission Log</h1>
+        <h1>Histórico de Missões</h1>
       </div>
       <div class="section-content-container">
-        <h3>Current Assignment</h3>
+        <h3>Missão Atual</h3>
         <Markdown :source="current_md" class="markdown" />
-        <h3>Mission List</h3>
+        <h3>Lista de Missões</h3>
         <div class="mission-list-container">
           <Mission
             v-for="item in this.missions"
@@ -24,7 +24,7 @@
     <section class="section-container" id="events" style="width:435px; height:714px;">
       <div class="section-header clipped-medium-backward">
         <img src="/icons/events-icon.svg" />
-        <h1>Events Log</h1>
+        <h1>Status Atual</h1>
       </div>
       <div class="section-content-container">
         <Markdown :source="events" class="markdown" />
@@ -34,7 +34,7 @@
       <div style="height:52px; overflow:hidden;">
         <div class="section-header clipped-medium-backward-pilot">
           <img src="/icons/pilot-icon.svg" />
-          <h1>Pilot Roster</h1>
+          <h1>Pilotos</h1>
         </div>
         <div class="rhombus-back">&nbsp;</div>
       </div>
@@ -95,62 +95,59 @@ export default {
       "missions": [
         {
           "slug": "001",
-          "name": "Bug-Hunt",
-          "status": "start"
+          "name": "Nave Vanguardd",
+          "status": "in-progress"
         },
+        {
+          "slug": "002",
+          "name": "Vigilant Gaze",
+          "status": "start"
+        }
       ],
       "pilots": [
         {
-          "callsign": "Jinzo",
-          "alias": "Shayan Arsenal",
-          "code": "462370be-bd0f-41c2-b667-cc75f3a59a96///NDL-C-DEEP-STATION//377308ad-ba23-410b-ae37-68a1fb5f8db4",
-          "corpro": "GMS",
-          "frame": "Everest",
-          "mech": "Type - Worst Beat"
+          "callsign": "TSAR",
+          "alias": "Avgustin Nikolaev",
+          "code": "462370be-bd0f-41c2-b667-cc75f3a59a96///NDL-C-ELYSIUM-STATION//377308ad-ba23-410b-ae37-68a1fb5f8db4",
+          "corpro": "HA",
+          "frame": "Sherman",
+          "mech": "Ultima"
         },
         {
-          "callsign": "Kal",
-          "alias": "Vier Flau",
-          "code": "7cd700cc-c990-48ed-892f-e5468de724c4///NDL-C-DEEP-STATION//a98c3e28-ad4a-4f89-bcd9-501464e960da",
-          "corpro": "GMS",
-          "frame": "Everest",
-          "mech": "Necrophile"
+          "callsign": "VERMILION",
+          "alias": "Devon Crax",
+          "code": "7cd700cc-c990-48ed-892f-e5468de724c4///NDL-C-ELYSIUM-STATION//a98c3e28-ad4a-4f89-bcd9-501464e960da",
+          "corpro": "SSC",
+          "frame": "White Witch",
+          "mech": "Princesa"
         },
         {
-          "callsign": "Starboard",
-          "alias": "Maria",
-          "code": "4be26ce9-923b-4069-b6c9-76437d4be455///NDL-C-DEEP-STATION//056940c6-8d55-4190-8e85-57caa043cb1a",
-          "corpro": "GMS",
-          "frame": "Everest",
-          "mech": "Scarlet Judicator"
+          "callsign": "K12",
+          "alias": "Julius",
+          "code": "4be26ce9-923b-4069-b6c9-76437d4be455///NDL-C-ELYSIUM-STATION//056940c6-8d55-4190-8e85-57caa043cb1a",
+          "corpro": "IPS-N",
+          "frame": "Caliban",
+          "mech": "Johnny"
         },
         {
-          "callsign": "Badlands",
-          "alias": "Marlene Gatsby",
-          "code": "98ca9616-044e-4f87-b89b-aae4eb3387ec///NDL-C-DEEP-STATION//6f572259-6946-41bf-931a-e0543709e892",
-          "corpro": "GMS",
+          "callsign": "GARGOLA",
+          "alias": "Layla Smirnov",
+          "code": "98ca9616-044e-4f87-b89b-aae4eb3387ec///NDL-C-ELYSIUM-STATION//6f572259-6946-41bf-931a-e0543709e892",
+          "corpro": "IPS-N",
           "frame": "Everest",
-          "mech": "Mayfly"
-        },
-        {
-          "callsign": "Compadre",
-          "alias": 'Clint "CC" Cruz',
-          "code": "d1fdf62e-d81e-4e10-97c8-df3bc4860117///NDL-C-DEEP-STATION//5a4254aa-9fa2-42ca-a077-8f5bfd1e1ad3",
-          "corpro": "GMS",
-          "frame": "Everest",
-          "mech": "Rio Bravo"
+          "mech": "Sisyphus"
         },
       ],
       "header": {
-        "planet": "Hercynia",
-        "year": "5014u",
-        "system": "Ardennes-3",
-        "gate": "Atlas-Quanokrim",
-        "ring": "Atlas-Line",
-        "headerTitle": "Mirrorsmoke",
-        "headerSubtitle": "Mercenary Company",
-        "subheaderTitle": "Crisis Response",
-        "subheaderSubtitle": "Delta-Echo-Echo-Zulu",
+        "planet": "Elysium",
+        "year": "5016u",
+        "system": "Rimward",
+        "gate": "Prototype-Charlie",
+        "ring": "Expresso Elysium",
+        "headerTitle": "Elysium",
+        "headerSubtitle": "A Estação Dourada",
+        "subheaderTitle": "Terminal de Operações",
+        "subheaderSubtitle": "Quatros Reis Celestiais",
       },
       "options":{
         "eventsMarkdownPerMission": true
@@ -208,11 +205,14 @@ export default {
 }
 </script>
 
-
 <style lang="scss">
 #app {
-  width: 1902px;
-  height: 910px;
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
   overflow: hidden;
+  background-image: url('/public/terminal.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center center; 
 }
 </style>

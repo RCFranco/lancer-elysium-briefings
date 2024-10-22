@@ -50,7 +50,7 @@ This file contains the basic structure of the entire application - and houses th
 - `mission_slug` - Controls what mission file is selected on startup. This MUST match a markdown file within the `/public/missions/` directory.
 - `missions.slug` - Controls what markdown file is selected when this mission is selected. This MUST match a markdown file within the `/public/missions/` directory.
 - `missions.name` - Controls what name the mission has in the mission list.
-- `missions.status` - controls what badge the mission has. Acceptable values are `start`, `partial-success`, `success`, and `failure`. 
+- `missions.status` - controls what badge the mission has. Acceptable values are `start`, `in-progress`, `success`, and `failure`. 
 - `pilots.callsign` - Controls what appears in the callsign section of the pilot roster. MUST match pilot portraits and biography markdown files within the `/public/pilots/` directory.
 - `pilots.alias` - Controls what appears in the Name or Legal Alias section of the pilot roster.
 - `pilots.code` - Controls what appears underneath the Name or Legal Alias section of the pilot roster.

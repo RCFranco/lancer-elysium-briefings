@@ -5,7 +5,7 @@
 /*-------------------------------------*/
 
 //Primary Colors
-$primary: rgba(125, 187, 187, 1);
+$primary: rgba(15, 180, 182, 1);
 $secondary: rgba(23, 29, 30, 0.8);
 $highlight-hover: rgba(255, 255, 255, 0.3);
 $highlight-active: rgba(255, 255, 255, 0.1);
@@ -214,6 +214,7 @@ div .location-info {
   width: 550px;
   padding: 10px;
   margin-left: 20px;
+  margin-top: 12px;
   display: flex;
   flex-direction: column;
   color: $text-location;
@@ -287,17 +288,26 @@ div.location-info {
 
 #pilots {
   animation-delay: 2.8s;
+  margin-right: 4%;
 }
 
-div .content-container {
-  display: flex;
-  flex-direction: row;
+div.content-container {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between; 
+  align-items: stretch; 
+  width: 100%;
+  padding: 0 2%; 
+  gap: 2%; 
+  margin-top: 2%; 
 }
 
 section.section-container {
+  flex: 1; 
+  margin: 0; 
+  margin-right: 1%; 
   display: flex;
   flex-direction: column;
-  margin: 50px;
 }
 
 section .section-header {
@@ -460,7 +470,7 @@ section .section-header {
     background-color: $mission-start;
   }
 
-  .partial-success {
+  .in-progress {
     background-color: $mission-partial;
   }
 
@@ -602,27 +612,43 @@ section .section-header {
 }
 
 .o-modal > div:nth-child(2) {
-  position: absolute;
-  left: 50px;
-  top: 142px;
-  display: flex;
-  gap: 5em;
+  position: relative; /* Change to relative to make it align properly within its parent */
+  display: flex; /* Use Flexbox for better alignment */
+  justify-content: center; /* Centers the elements horizontally */
+  align-items: flex-start; /* Aligns to the top */
+  gap: 2em; /* Adds consistent spacing between the two modals */
+  margin: 0 auto; /* Centers the entire container */
+  top: 0; /* Reset to avoid any vertical positioning issues */
+  left: 0; /* Reset left positioning */
+}
+
+.pilot-modal-container {
+  display: flex; /* Enables Flexbox */
+  justify-content: center; /* Center all content horizontally */
+  align-items: flex-start; /* Align items to the top of their container */
+  gap: 2em; /* Adds a gap between modals for spacing */
+  width: 100%; /* Full width of the container */
+  margin: 0 auto; /* Center the container itself */
+  margin-top: 3%;
+  box-sizing: border-box; /* Include padding and border in element width */
 }
 
 .pilot-modal {
+  box-sizing: border-box; /* Include padding and border in element dimensions */
+  margin: 0; /* Remove unnecessary margins */
   ::-webkit-scrollbar {
-    width: 12px; /* width of the entire scrollbar */
+    width: 12px; /* Width of the entire scrollbar */
   }
 
   ::-webkit-scrollbar-track {
-    background: none; /* color of the tracking area */
+    background: none; /* Color of the tracking area */
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: $primary; /* color of the scroll thumb */
-    border-radius: 20px; /* roundness of the scroll thumb */
+    background-color: $primary; /* Color of the scroll thumb */
+    border-radius: 20px; /* Roundness of the scroll thumb */
     border: 3px solid $secondary;
-    margin: 3px; /* creates padding around scroll thumb */
+    margin: 3px; /* Creates padding around the scroll thumb */
   }
 
   .pilot-header-container {
@@ -637,9 +663,10 @@ section .section-header {
     gap: 15px;
     padding-left: 16px;
     margin-top: -38px !important;
+
     h1 {
       font-size: 26px;
-      margin: 0%;
+      margin: 0;
       align-self: center;
       font-family: "Big Shoulders Display", cursive;
       font-weight: 800;
@@ -710,6 +737,7 @@ section .section-header {
     top: -38px;
   }
 }
+
 
 .o-modal__overlay {
   bottom: 0;
