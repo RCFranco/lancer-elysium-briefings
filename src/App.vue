@@ -102,11 +102,6 @@ export default {
           "slug": "002",
           "name": "Vigilant Gaze",
           "status": "start"
-        },
-        {
-          "slug": "003",
-          "name": "Test",
-          "status": "start"
         }
       ],
       "pilots": [
