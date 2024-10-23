@@ -89,12 +89,12 @@ export default {
 
   data() {
     return {
-      "mission_slug": "001",
+      "mission_slug": "EPV1",
       "current_md": "",
       "events": "",
       "missions": [
         {
-          "slug": "001",
+          "slug": "EPV1",
           "name": "Operação de Resgate AC-251",
           "status": "in-progress"
         },

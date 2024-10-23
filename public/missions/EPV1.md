@@ -1,4 +1,4 @@
-# Missão // #001
+# Missão // #EPV1
 ## Operação de Resgate AC-251
 
 Elysium está em estado de alerta. Um exército privado conhecido como Vanguard atacou uma das frotas da estação, resultando na perda de recursos valiosos — dados de escoltas, suprimentos e informações sensíveis. Após a análise de sinais, foi identificada uma nave de grande porte orbitando o planeta de Vinaris, possivelmente uma base avançada da Vanguard.
